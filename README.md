@@ -85,7 +85,7 @@ Esto ejecutará las pruebas automatizadas con **Jest y Supertest**.
 ##  Uso de la API con Postman
 Puedes importar la colección de Postman con los endpoints preconfigurados desde el siguiente archivo JSON:
 
- **[Descargar Postman Collection](Banpay.postman_collection.json)**
+ **Descargar Postman Collection**
 
 Para usarlo en **Postman**:
 1. Abre Postman.
