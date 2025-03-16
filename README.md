@@ -19,7 +19,27 @@ docker run -p 4000:4000 --env-file .env user-api-node
 
 3. ¡Disfruta de la API! 🎉
 
----
+-------------------------------------------------
+### **Usar MongoDB local con Docker Compose**
+Si no quieres usar el servidor de **MongoDB Atlas** y prefieres ejecutar uno localmente con Docker, sigue estos pasos:
+
+1. **Modifica el archivo `.env`** y cambia la variable de conexión a MongoDB:
+   ```env
+   MONGODB_URI=mongodb://mongo:27017/user_database
+   ```
+
+2. **Ejecuta el siguiente comando** para levantar MongoDB junto con la API:
+   ```sh
+   docker-compose up --build
+   ```
+
+3. **Verifica que el servicio esté corriendo**:
+   ```sh
+   docker ps
+   ```
+   Esto mostrará los contenedores activos. Asegúrate de que MongoDB y la API estén en ejecución.
+
+-------------------------------------------------
 
 ## 🛠 Instalación y Configuración (sin Docker)
 Si no tienes Docker, sigue estos pasos:
